@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-brand-indigo: #6366f1;
+  --color-brand-cyan: #06b6d4;
+}
+
+/* Custom Utilities for Glassmorphism & Animations */
+@layer utilities {
+  .bg-radial-gradient {
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.15) 0px, transparent 50%);
+  }
+  
+  .glass-card {
+    background-color: var(--glass-bg, rgba(17, 24, 39, 0.75));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.1));
+  }
+}
+
+/* Dynamic CSS Variables driven by [data-theme] attribute */
+:root, [data-theme="dark"] {
+  --bg-main: #0b0f19;
+  --glass-bg: rgba(17, 24, 39, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --text-main: #f3f4f6;
+  --text-sub: #9ca3af;
+  --card-sub: #1f293d;
+  --bubble-peer-bg: rgba(31, 41, 61, 0.85);
+  --bubble-peer-text: #f3f4f6;
+  --code-bg: rgba(0, 0, 0, 0.35);
+  --code-text: #38bdf8;
+  --input-bg: rgba(15, 23, 42, 0.6);
+  --input-border: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="light"] {
+  --bg-main: #f8fafc;
+  --glass-bg: #ffffff;
+  --glass-border: #e2e8f0;
+  --text-main: #0f172a;
+  --text-sub: #475569;
+  --card-sub: #f1f5f9;
+  --bubble-peer-bg: #e2e8f0;
+  --bubble-peer-text: #0f172a;
+  --code-bg: #f1f5f9;
+  --code-text: #0284c7;
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+}
+
+/* Comprehensive Light Mode Style Overrides */
+[data-theme="light"] .bg-slate-950 {
+  background-color: #f8fafc !important;
+}
+[data-theme="light"] .bg-slate-900 {
+  background-color: #ffffff !important;
+}
+[data-theme="light"] .bg-slate-900\/90,
+[data-theme="light"] .bg-slate-900\/80,
+[data-theme="light"] .bg-slate-900\/70,
+[data-theme="light"] .bg-slate-900\/50 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+[data-theme="light"] .bg-slate-950\/80,
+[data-theme="light"] .bg-slate-950\/70,
+[data-theme="light"] .bg-slate-950\/60,
+[data-theme="light"] .bg-slate-950\/40,
+[data-theme="light"] .bg-slate-950\/30 {
+  background-color: #f1f5f9 !important;
+}
+[data-theme="light"] .bg-slate-800 {
+  background-color: #e2e8f0 !important;
+}
+[data-theme="light"] .bg-slate-800\/90,
+[data-theme="light"] .bg-slate-800\/80,
+[data-theme="light"] .bg-slate-800\/60,
+[data-theme="light"] .bg-slate-800\/50,
+[data-theme="light"] .bg-slate-800\/30 {
+  background-color: #e2e8f0 !important;
+}
+[data-theme="light"] .text-slate-100 {
+  color: #0f172a !important;
+}
+[data-theme="light"] .text-slate-200 {
+  color: #1e293b !important;
+}
+[data-theme="light"] .text-slate-300 {
+  color: #334155 !important;
+}
+[data-theme="light"] .text-slate-400 {
+  color: #64748b !important;
+}
+[data-theme="light"] .text-slate-500 {
+  color: #64748b !important;
+}
+[data-theme="light"] .border-slate-800,
+[data-theme="light"] .border-slate-800\/80,
+[data-theme="light"] .border-slate-800\/60 {
+  border-color: #e2e8f0 !important;
+}
+[data-theme="light"] .border-slate-700,
+[data-theme="light"] .border-slate-700\/80,
+[data-theme="light"] .border-slate-700\/60,
+[data-theme="light"] .border-slate-700\/50 {
+  border-color: #cbd5e1 !important;
+}
+[data-theme="light"] .bg-emerald-950\/80,
+[data-theme="light"] .bg-emerald-950\/60,
+[data-theme="light"] .bg-emerald-950\/30 {
+  background-color: #d1fae5 !important;
+  color: #065f46 !important;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes typing {
+  0%, 100% { transform: translateY(0); opacity: 0.4; }
+  50% { transform: translateY(-4px); opacity: 1; }
+}
+
+.animate-typing-1 { animation: typing 1.4s infinite ease-in-out; }
+.animate-typing-2 { animation: typing 1.4s infinite ease-in-out 0.2s; }
+.animate-typing-3 { animation: typing 1.4s infinite ease-in-out 0.4s; }

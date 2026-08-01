@@ -1,0 +1,51 @@
+[
+  {
+    "id": "user_1785508735008_e3fffcb4",
+    "username": "Bob",
+    "password_hash": "$2b$10$cO4OP2qeZuabsfHg.t5RUeEMeVmbCa4Q8uKwxnt9LcyjPG/8wvfAq",
+    "created_at": "2026-07-31T14:38:55.008Z",
+    "tag_id": "@Bob#fcb4"
+  },
+  {
+    "id": "user_1785508759411_0cd6572e",
+    "username": "Neo",
+    "password_hash": "$2b$10$8O4nvUqX43JJwGfCsTq2w.38CXNCmqOY6k6WfY8dTUQwsgRPbdV4C",
+    "created_at": "2026-07-31T14:39:19.411Z",
+    "tag_id": "@Neo#572e"
+  },
+  {
+    "id": "user_1785582394309_50c63541",
+    "tag_id": "@harry#3541",
+    "username": "harry",
+    "password_hash": "$2b$10$CS/k2MMD/dEksmHUfBIOTe9EO4q7qWxdjLaIAahxIGZ6JHg8jYAOu",
+    "bio": "Hey there! I am using CipherChat.",
+    "avatar_color": "#06b6d4",
+    "status": "online",
+    "last_seen": "2026-08-01T13:30:42.438Z",
+    "created_at": "2026-08-01T11:06:34.309Z",
+    "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"2ERqG9asgokf3AHjn1x4t1pbkHX75qigyEPVaiPhAWE\",\"y\":\"qElTHzd3NJUIPBXHKWGJY3W0afKpIZYGftI63MSexwA\"}"
+  },
+  {
+    "id": "user_1785582430417_8673045d",
+    "tag_id": "@mia#045d",
+    "username": "mia",
+    "password_hash": "$2b$10$nTxsLH732XmLReqikN6q2u91oKpcPwCXL/dPqDM2xDvYApRUZ8DiO",
+    "bio": "Hey there! I am using CipherChat.",
+    "avatar_color": "#f59e0b",
+    "status": "offline",
+    "last_seen": "2026-08-01T11:28:57.872Z",
+    "created_at": "2026-08-01T11:07:10.417Z"
+  },
+  {
+    "id": "user_1785583754789_c4d9065c",
+    "tag_id": "@demo#065c",
+    "username": "demo",
+    "password_hash": "$2b$10$HQebDmX1R0lhtz6WaQIZJ.DnyDHeApGishxC7Oj2smTTSHN4rSQsa",
+    "bio": "Hey there! I am using CipherChat.",
+    "avatar_color": "#8b5cf6",
+    "status": "online",
+    "last_seen": "2026-08-01T13:30:25.725Z",
+    "created_at": "2026-08-01T11:29:14.789Z",
+    "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"hYHxtZbm8U7qMD5Bn1DZu3vUkmOzL5KkAZhrQHo2EDU\",\"y\":\"ClgoDqlYtIcEuqUjBQS9YWCmjzX8MhmyviirGJBzj1A\"}"
+  }
+]
