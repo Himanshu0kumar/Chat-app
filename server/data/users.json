@@ -18,12 +18,12 @@
     "tag_id": "@harry#3541",
     "username": "harry",
     "password_hash": "$2b$10$CS/k2MMD/dEksmHUfBIOTe9EO4q7qWxdjLaIAahxIGZ6JHg8jYAOu",
-    "bio": "Hey there! I am using CipherChat.",
+    "bio": "Hey there! I am using CipherChat. hhjkgjhgjh",
     "avatar_color": "#06b6d4",
     "status": "online",
-    "last_seen": "2026-08-01T13:30:42.438Z",
+    "last_seen": "2026-08-05T12:19:22.961Z",
     "created_at": "2026-08-01T11:06:34.309Z",
-    "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"2ERqG9asgokf3AHjn1x4t1pbkHX75qigyEPVaiPhAWE\",\"y\":\"qElTHzd3NJUIPBXHKWGJY3W0afKpIZYGftI63MSexwA\"}"
+    "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"5E0dMcco2k8EZVAFqxKmpU31GVY-gMC4EtwN-6uvqaY\",\"y\":\"7qEsY-oXS1CsmLDwRsvFujGaayGoKeZhZs2IyBqYsiU\"}"
   },
   {
     "id": "user_1785582430417_8673045d",
@@ -44,8 +44,8 @@
     "bio": "Hey there! I am using CipherChat.",
     "avatar_color": "#8b5cf6",
     "status": "online",
-    "last_seen": "2026-08-01T13:30:25.725Z",
+    "last_seen": "2026-08-05T12:06:01.034Z",
     "created_at": "2026-08-01T11:29:14.789Z",
-    "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"hYHxtZbm8U7qMD5Bn1DZu3vUkmOzL5KkAZhrQHo2EDU\",\"y\":\"ClgoDqlYtIcEuqUjBQS9YWCmjzX8MhmyviirGJBzj1A\"}"
+    "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"E8muWAfCVEJvt321IaSeyV6VxHPDAzoyhU33-Wv-PyQ\",\"y\":\"m0QbSm93gBdNVtihKsNgDEjzZjU1cW8UK443UKRiqW0\"}"
   }
 ]

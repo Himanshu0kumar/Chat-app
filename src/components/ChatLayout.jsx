@@ -25,6 +25,7 @@ export function ChatLayout({
   onCreateGroup,
   onUpdateProfile,
   onLogout,
+  onDeleteAccount,
 }) {
   const [showCreateGroup, setShowCreateGroup] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
@@ -90,6 +91,7 @@ export function ChatLayout({
           onClose={() => setShowSettings(false)}
           onUpdateProfile={onUpdateProfile}
           onLogout={onLogout}
+          onDeleteAccount={onDeleteAccount}
         />
       )}
     </div>

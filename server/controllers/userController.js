@@ -1,4 +1,4 @@
-import { getAllUsers, findUserById, updateUserProfile, searchUsersInDb, getUserRecentConversations } from '../database.js';
+import { getAllUsers, findUserById, updateUserProfile, searchUsersInDb, getUserRecentConversations, deleteUserPermanent } from '../database.js';
 
 export async function getUsers(req, res, next) {
   try {
@@ -72,6 +72,15 @@ export async function updateProfile(req, res, next) {
     const { bio, avatarColor } = req.body;
     const updated = await updateUserProfile(req.user.id, { bio, avatarColor });
     res.json({ success: true, user: updated });
+  } catch (err) {
+    next(err);
+  }
+}
+
+export async function deleteAccount(req, res, next) {
+  try {
+    await deleteUserPermanent(req.user.id);
+    res.json({ success: true, message: 'Account permanently deleted successfully' });
   } catch (err) {
     next(err);
   }

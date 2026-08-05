@@ -631,3 +631,33 @@ export async function getUserUnreadCounts(userId) {
     return map;
   }
 }
+
+export async function deleteUserPermanent(userId) {
+  if (isPostgresConnected) {
+    await pool.query('DELETE FROM group_members WHERE user_id = $1', [userId]);
+    await pool.query('DELETE FROM messages WHERE sender_id = $1 OR receiver_id = $1', [userId]);
+    await pool.query('DELETE FROM groups WHERE created_by = $1', [userId]);
+    await pool.query('DELETE FROM users WHERE id = $1', [userId]);
+    return true;
+  } else {
+    for (const [key, user] of fileDb.users.entries()) {
+      if (user.id === userId) {
+        fileDb.users.delete(key);
+        break;
+      }
+    }
+    fileDb.messages = fileDb.messages.filter(m => m.sender_id !== userId && m.receiver_id !== userId);
+    for (const [groupId, group] of fileDb.groups.entries()) {
+      if (group.created_by === userId) {
+        fileDb.groups.delete(groupId);
+      } else if (group.members) {
+        group.members = group.members.filter(mId => mId !== userId);
+        fileDb.groups.set(groupId, group);
+      }
+    }
+    persistUsersToFile();
+    persistMessagesToFile();
+    persistGroupsToFile();
+    return true;
+  }
+}

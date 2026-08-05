@@ -8,7 +8,7 @@ import { AuthProvider, useAuth } from './context/AuthContext.jsx';
 
 function MainApp() {
   const crypto = useCrypto();
-  const { user, token, isAuthenticated, isLoading, logout } = useAuth();
+  const { user, token, isAuthenticated, isLoading, logout, deleteAccount } = useAuth();
 
   // Initialize or restore ECDH keypair identity whenever user logs in
   useEffect(() => {
@@ -54,6 +54,7 @@ function MainApp() {
       onCreateGroup={socketState.createGroupApi}
       onUpdateProfile={socketState.updateProfileApi}
       onLogout={logout}
+      onDeleteAccount={deleteAccount}
     />
   );
 }

@@ -96,6 +96,25 @@ export function AuthProvider({ children }) {
     setUser(null);
   };
 
+  const updateUser = (updatedData) => {
+    setUser((prev) => (prev ? { ...prev, ...updatedData } : prev));
+  };
+
+  const deleteAccount = async () => {
+    try {
+      if (token) {
+        await fetch('/api/users/account', {
+          method: 'DELETE',
+          headers: { Authorization: `Bearer ${token}` },
+        });
+      }
+    } catch (err) {
+      console.error('Delete account request error:', err);
+    } finally {
+      logout();
+    }
+  };
+
   return (
     <AuthContext.Provider
       value={{
@@ -107,6 +126,8 @@ export function AuthProvider({ children }) {
         login,
         signup,
         logout,
+        updateUser,
+        deleteAccount,
         setAuthError,
       }}
     >

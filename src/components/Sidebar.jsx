@@ -145,11 +145,11 @@ export function Sidebar({
           </button>
           <ThemeToggle />
           <button
-            onClick={onLogout}
-            className="p-2 text-slate-400 hover:text-red-400 hover:bg-slate-800 rounded-xl transition-all"
-            title="Logout"
+            onClick={onOpenSettings}
+            className="p-2 text-slate-400 hover:text-emerald-400 hover:bg-slate-800 rounded-xl transition-all"
+            title="Settings"
           >
-            <LogOut className="w-5 h-5" />
+            <Settings className="w-5 h-5" />
           </button>
         </div>
       </div>
@@ -359,25 +359,6 @@ export function Sidebar({
           }}
         />
       )}
-
-      {/* Sidebar Bottom Footer: Settings & Profile */}
-      <div className="p-3 bg-slate-950/90 border-t border-slate-800/80 flex items-center justify-between gap-2 shrink-0">
-        <button
-          onClick={onOpenSettings}
-          className="flex-1 flex items-center justify-center gap-2 py-2 px-3 bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-emerald-400 border border-slate-800 rounded-xl text-xs font-semibold transition-all shadow-sm group"
-        >
-          <Settings className="w-4 h-4 text-slate-400 group-hover:text-emerald-400 group-hover:rotate-45 transition-all" />
-          <span>Settings</span>
-        </button>
-
-        <button
-          onClick={onOpenProfile}
-          className="p-2 bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-emerald-400 border border-slate-800 rounded-xl text-xs transition-all"
-          title="View My Profile"
-        >
-          <User className="w-4 h-4" />
-        </button>
-      </div>
     </aside>
   );
 }
