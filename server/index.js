@@ -18,7 +18,12 @@ const app = express();
 app.use(cors());
 app.use(express.json({ limit: '25mb' })); // Support Base64 audio / media payloads
 
-// REST API Routes
+// REST API Routes (Version 1)
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/users', userRoutes);
+app.use('/api/v1/groups', groupRoutes);
+
+// Legacy REST API Routes Alias
 app.use('/api/auth', authRouter);
 app.use('/api/users', userRoutes);
 app.use('/api/groups', groupRoutes);

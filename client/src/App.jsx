@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
 import { useCrypto } from './hooks/useCrypto.js';
 import { useSocket } from './hooks/useSocket.js';
+import { useAuth } from './hooks/useAuth.js';
 import { LoginScreen } from './components/LoginScreen.jsx';
 import { ChatLayout } from './components/ChatLayout.jsx';
-import { ThemeProvider } from './context/ThemeContext.jsx';
-import { AuthProvider, useAuth } from './context/AuthContext.jsx';
 
-function MainApp() {
+export default function App() {
   const crypto = useCrypto();
   const { user, token, isAuthenticated, isLoading, logout, deleteAccount } = useAuth();
 
@@ -56,15 +55,5 @@ function MainApp() {
       onLogout={logout}
       onDeleteAccount={deleteAccount}
     />
-  );
-}
-
-export default function App() {
-  return (
-    <ThemeProvider>
-      <AuthProvider>
-        <MainApp />
-      </AuthProvider>
-    </ThemeProvider>
   );
 }

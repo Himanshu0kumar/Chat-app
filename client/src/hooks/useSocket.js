@@ -23,7 +23,7 @@ export function useSocket(user, token, keyPair) {
   const fetchConversations = useCallback(async () => {
     if (!token) return;
     try {
-      const res = await fetch('/api/users/conversations', {
+      const res = await fetch('/api/v1/users/conversations', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -47,7 +47,7 @@ export function useSocket(user, token, keyPair) {
   const fetchMyGroups = useCallback(async () => {
     if (!token) return;
     try {
-      const res = await fetch('/api/groups', {
+      const res = await fetch('/api/v1/groups', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();

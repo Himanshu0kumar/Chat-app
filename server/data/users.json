@@ -11,7 +11,10 @@
     "username": "Neo",
     "password_hash": "$2b$10$8O4nvUqX43JJwGfCsTq2w.38CXNCmqOY6k6WfY8dTUQwsgRPbdV4C",
     "created_at": "2026-07-31T14:39:19.411Z",
-    "tag_id": "@Neo#572e"
+    "tag_id": "@Neo#572e",
+    "status": "online",
+    "last_seen": "2026-08-08T09:13:59.143Z",
+    "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"enC6rfNyGODG8M7d9ecWxtSCtfPA08Iq5yNHlEQTy9M\",\"y\":\"Y9l117zWLxvtvWXaGj3bjRJpSsxfT-LTtj1BdyEoSdw\"}"
   },
   {
     "id": "user_1785582394309_50c63541",
@@ -21,7 +24,7 @@
     "bio": "Hey there! I am using CipherChat. hhjkgjhgjh",
     "avatar_color": "#06b6d4",
     "status": "online",
-    "last_seen": "2026-08-05T12:19:22.961Z",
+    "last_seen": "2026-08-05T12:33:41.013Z",
     "created_at": "2026-08-01T11:06:34.309Z",
     "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"5E0dMcco2k8EZVAFqxKmpU31GVY-gMC4EtwN-6uvqaY\",\"y\":\"7qEsY-oXS1CsmLDwRsvFujGaayGoKeZhZs2IyBqYsiU\"}"
   },
@@ -44,8 +47,8 @@
     "bio": "Hey there! I am using CipherChat.",
     "avatar_color": "#8b5cf6",
     "status": "online",
-    "last_seen": "2026-08-05T12:06:01.034Z",
+    "last_seen": "2026-08-08T09:13:59.131Z",
     "created_at": "2026-08-01T11:29:14.789Z",
-    "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"E8muWAfCVEJvt321IaSeyV6VxHPDAzoyhU33-Wv-PyQ\",\"y\":\"m0QbSm93gBdNVtihKsNgDEjzZjU1cW8UK443UKRiqW0\"}"
+    "public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"QMfTTQafW7wOPOghY-HYNSfyeZJUGa_8qHSNPx8Nhn4\",\"y\":\"v9xXzkkEBAPj2LE7rNInHZzq4n92svF8oi6Iknw7nCw\"}"
   }
 ]

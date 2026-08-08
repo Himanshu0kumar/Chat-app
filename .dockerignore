@@ -1,0 +1,25 @@
+# Dependencies & Build Outputs
+node_modules
+dist
+build
+.npm
+*.log
+
+# Git & IDE Configuration
+.git
+.gitignore
+.github
+.vscode
+.idea
+
+# Environment & Sensitive Files
+.env
+.env.local
+.env.development
+.env.production
+server/data/*.json
+
+# Temporary & Cache Files
+tmp
+temp
+.DS_Store

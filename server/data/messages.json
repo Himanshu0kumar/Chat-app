@@ -30,7 +30,8 @@
     "iv": "sgwKEj9FOHKHvMZA",
     "file_meta": null,
     "sender_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"bQ4X6xnrzhcJ0cqUOm3jEFPW2bKbWUK6ZFTx8ZnBSh0\",\"y\":\"UB_fW0zeZIcTg0AVIIDy5a7_9t3s2vZHE-1aXa5x0ag\"}",
-    "created_at": "2026-08-01T09:29:12.797Z"
+    "created_at": "2026-08-01T09:29:12.797Z",
+    "status": "read"
   },
   {
     "id": "msg_1785577510758_402c67df",
@@ -41,7 +42,8 @@
     "iv": "+RvquqlfHShLBBhu",
     "file_meta": null,
     "sender_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"bQ4X6xnrzhcJ0cqUOm3jEFPW2bKbWUK6ZFTx8ZnBSh0\",\"y\":\"UB_fW0zeZIcTg0AVIIDy5a7_9t3s2vZHE-1aXa5x0ag\"}",
-    "created_at": "2026-08-01T09:45:10.758Z"
+    "created_at": "2026-08-01T09:45:10.758Z",
+    "status": "read"
   },
   {
     "id": "msg_1785577581141_b7b44a28",
@@ -549,5 +551,85 @@
     "status": "read",
     "reactions": "{}",
     "created_at": "2026-08-05T11:04:16.876Z"
+  },
+  {
+    "id": "msg_1786174520939_25507236",
+    "sender_id": "user_1785508759411_0cd6572e",
+    "receiver_id": "user_1785583754789_c4d9065c",
+    "group_id": null,
+    "msg_type": "text",
+    "ciphertext": "wO/EUcSZoqk+jxyihOL9E47ePmvPvrMc",
+    "iv": "Vvl6wzQghuGRAA1k",
+    "file_meta": null,
+    "sender_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"enC6rfNyGODG8M7d9ecWxtSCtfPA08Iq5yNHlEQTy9M\",\"y\":\"Y9l117zWLxvtvWXaGj3bjRJpSsxfT-LTtj1BdyEoSdw\"}",
+    "receiver_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"QMfTTQafW7wOPOghY-HYNSfyeZJUGa_8qHSNPx8Nhn4\",\"y\":\"v9xXzkkEBAPj2LE7rNInHZzq4n92svF8oi6Iknw7nCw\"}",
+    "reply_to": null,
+    "status": "read",
+    "reactions": "{}",
+    "created_at": "2026-08-08T07:35:20.939Z"
+  },
+  {
+    "id": "msg_1786177388189_9dd1d0f3",
+    "sender_id": "user_1785583754789_c4d9065c",
+    "receiver_id": "user_1785508759411_0cd6572e",
+    "group_id": null,
+    "msg_type": "text",
+    "ciphertext": "YmofX7CrDwHtrh2dzY+PxArufQ==",
+    "iv": "u1RlcG/872eN/EMD",
+    "file_meta": null,
+    "sender_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"QMfTTQafW7wOPOghY-HYNSfyeZJUGa_8qHSNPx8Nhn4\",\"y\":\"v9xXzkkEBAPj2LE7rNInHZzq4n92svF8oi6Iknw7nCw\"}",
+    "receiver_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"enC6rfNyGODG8M7d9ecWxtSCtfPA08Iq5yNHlEQTy9M\",\"y\":\"Y9l117zWLxvtvWXaGj3bjRJpSsxfT-LTtj1BdyEoSdw\"}",
+    "reply_to": null,
+    "status": "read",
+    "reactions": "{}",
+    "created_at": "2026-08-08T08:23:08.189Z"
+  },
+  {
+    "id": "msg_1786177396689_6ea1a2e8",
+    "sender_id": "user_1785583754789_c4d9065c",
+    "receiver_id": "user_1785508759411_0cd6572e",
+    "group_id": null,
+    "msg_type": "text",
+    "ciphertext": "bAADQTXd7/VcUzubkHuDcR3UTauu9qcDog==",
+    "iv": "eboAv8eOAz7teLAV",
+    "file_meta": null,
+    "sender_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"QMfTTQafW7wOPOghY-HYNSfyeZJUGa_8qHSNPx8Nhn4\",\"y\":\"v9xXzkkEBAPj2LE7rNInHZzq4n92svF8oi6Iknw7nCw\"}",
+    "receiver_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"enC6rfNyGODG8M7d9ecWxtSCtfPA08Iq5yNHlEQTy9M\",\"y\":\"Y9l117zWLxvtvWXaGj3bjRJpSsxfT-LTtj1BdyEoSdw\"}",
+    "reply_to": null,
+    "status": "read",
+    "reactions": "{}",
+    "created_at": "2026-08-08T08:23:16.690Z"
+  },
+  {
+    "id": "msg_1786177680688_0c1bbb89",
+    "sender_id": "user_1785508759411_0cd6572e",
+    "receiver_id": "user_1785583754789_c4d9065c",
+    "group_id": null,
+    "msg_type": "text",
+    "ciphertext": "HszfmbyFE9IuEt3iqM11fG/ouluCSV+lj001kij+jA==",
+    "iv": "3cPQQOa34Q253Nu0",
+    "file_meta": null,
+    "sender_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"enC6rfNyGODG8M7d9ecWxtSCtfPA08Iq5yNHlEQTy9M\",\"y\":\"Y9l117zWLxvtvWXaGj3bjRJpSsxfT-LTtj1BdyEoSdw\"}",
+    "receiver_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"QMfTTQafW7wOPOghY-HYNSfyeZJUGa_8qHSNPx8Nhn4\",\"y\":\"v9xXzkkEBAPj2LE7rNInHZzq4n92svF8oi6Iknw7nCw\"}",
+    "reply_to": null,
+    "status": "read",
+    "reactions": "{}",
+    "created_at": "2026-08-08T08:28:00.688Z"
+  },
+  {
+    "id": "msg_1786177792778_6480b322",
+    "sender_id": "user_1785508759411_0cd6572e",
+    "receiver_id": "user_1785583754789_c4d9065c",
+    "group_id": null,
+    "msg_type": "text",
+    "ciphertext": "0A9nUgs5kYC1s4Jk6cEyoUL+iOmtAZ78IldMwWHJnA==",
+    "iv": "/bgZoAY3M5yHZSdb",
+    "file_meta": null,
+    "sender_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"enC6rfNyGODG8M7d9ecWxtSCtfPA08Iq5yNHlEQTy9M\",\"y\":\"Y9l117zWLxvtvWXaGj3bjRJpSsxfT-LTtj1BdyEoSdw\"}",
+    "receiver_public_key": "{\"crv\":\"P-256\",\"ext\":true,\"key_ops\":[],\"kty\":\"EC\",\"x\":\"QMfTTQafW7wOPOghY-HYNSfyeZJUGa_8qHSNPx8Nhn4\",\"y\":\"v9xXzkkEBAPj2LE7rNInHZzq4n92svF8oi6Iknw7nCw\"}",
+    "reply_to": null,
+    "status": "read",
+    "reactions": "{}",
+    "created_at": "2026-08-08T08:29:52.779Z"
   }
 ]

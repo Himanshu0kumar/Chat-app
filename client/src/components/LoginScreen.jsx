@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Lock, Shield, ArrowRight, KeyRound, Sparkles, UserCheck, UserPlus, Database } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 
 export function LoginScreen({ isCryptoInitializing }) {
   const { login, signup, authError, setAuthError } = useAuth();
